@@ -26,6 +26,12 @@ jQuery(document).ready(function($) {
         $("html, body").animate({ scrollTop: 0 }, 600);
         return false;
     });
+    $('.burger, .overlay').click(function(){
+        $('.burger').toggleClass('clicked');
+        $('.overlay').toggleClass('show');
+        $('.nav-mobile').toggleClass('show');
+        $('body').toggleClass('overflow');
+	});
     $("#form-send").submit(function (e) {
         e.preventDefault();
         $.post("mailsender.php", $(this).serialize(), function (data) {
