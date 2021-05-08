@@ -8,4 +8,11 @@ jQuery(document).ready(function($) {
         prevArrow: $('.main-slider__prev'),
         nextArrow: $('.main-slider__next'),
     });
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > 100) {
+            $('.main-header-wrapper').addClass('active');
+        } else {
+            $('.main-header-wrapper').removeClass('active');
+        }
+    });
 });

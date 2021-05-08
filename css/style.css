@@ -5,6 +5,10 @@
     font-family: "Muli";
     src: url("../fonts/Muli-Regular.ttf") format("woff");
 }
+a {
+    color: #00b6dc;
+    text-decoration: none;
+}
 .container {
     max-width: 1186px;
     width: 100%;
@@ -34,12 +38,14 @@
     position: fixed;
     z-index: 10;
     width: 100%;
+    transition: 0.5s;
 }
 .main-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 38px 0;
+    transition: 0.5s;
 }
 .main-menu ul {
     display: flex;
@@ -105,7 +111,6 @@
     position: relative;
     z-index: 2;
 }
-
 .main-slider__arrows {
     z-index: 4;
     position: absolute;
@@ -182,4 +187,104 @@
 .main-slider .slick-dots li.slick-active button {
     background: #ffcd19;
 }
-  
+.main-block-wrapper {
+    padding: 216px 0 0 0;
+}
+.main-block {
+    display: flex;
+    justify-content: space-between;
+}
+.main-block__info {
+    width: 55%;
+}
+.main-block__media {
+    width: 40%;
+}
+.main-block__title {
+    font-size: 36px;
+    font-family: "Muli";
+    color: rgb(0, 40, 65);
+    font-weight: bold;
+    line-height: 1.667;
+    text-align: left;
+    margin-bottom: 54px;
+}
+.main-block__text {
+    font-size: 17px;
+    font-family: "Muli";
+    color: rgb(51, 51, 51);
+    line-height: 1.778;
+    margin-bottom: 47px;
+}
+.main-block__textlast {
+    margin-bottom: 0px;
+}
+.main-block__media>img {
+    width: 100%;
+    box-shadow: 0px 0px 15px 1px rgba(0, 0, 0, 0.2);
+}
+.befor-ul {
+    padding-top: 34px;
+    display: inline-block;
+    padding-bottom: 32px;
+}
+.main-block__list li {
+    padding-bottom: 32px;
+    position: relative;
+    padding-left: 34px;
+}
+.main-block__list li::before {
+    content: '';
+    background: url('../img/sm_arrow-b.png') no-repeat;
+    background-size: contain;
+    height: 10px;
+    width: 14px;
+    position: absolute;
+    left: 0;
+    top: 10px;
+}
+.last-main-block {
+    padding-bottom: 220px;
+}
+.main-header-wrapper.active {
+    background: rgba(0, 0, 0, 0.7);
+}
+.main-header-wrapper.active .main-header {
+    padding: 5px 0;
+}
+.logo a img {
+    height: 100px;
+    transition: 0.5s;
+}
+.main-header-wrapper.active .logo a img {
+    height: 50px;
+}
+.open-video {
+    position: relative;
+    display: block;
+}
+.open-video>img {
+    width: 100%;
+    box-shadow: 0px 0px 15px 1px rgb(0 0 0 / 20%);
+}
+.open-video:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,.52);
+    z-index: 1;
+}
+.play-btn {
+    position: absolute;
+    z-index: 4;
+    top: 50%;
+    left: 50%;
+    transform: scale(1) translate(-50%, -50%);
+    transition: 0.5s;
+}
+.open-video:hover .play-btn {
+    transform: scale(1.05) translate(-50%, -50%);
+}
