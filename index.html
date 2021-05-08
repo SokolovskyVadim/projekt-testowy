@@ -181,12 +181,54 @@
                 </div>
             </div>
         </section>
-        
-
+        <section class="form-block__wrapper">
+            <div class="form-block__title">
+                Nie znalazłeś odpowiedniego kontaktu?
+            </div>
+            <div class="form-block__text">
+                Skorzystaj z formularza.
+            </div>
+            <div class="form-block container">
+                <form method="post" id="form-send">
+                    <div class="top-row">
+                        <label>
+                            <input type="text" name="name">
+                            <span>Imię</span>
+                        </label>
+                        <label>
+                            <input type="text" name="soc">
+                            <span>Nazwisko</span>
+                        </label>
+                    </div>
+                    <div class="mid-row">
+                        <label>
+                            <input type="email" name="mail">
+                            <span>Adres e-mail</span>
+                        </label>
+                    </div>
+                    <div class="bot-row">
+                        <label>
+                            <span>Treść wiadomości</span>
+                            <textarea name="" id="" name="msg"></textarea>
+                        </label>
+                    </div>
+                    <div class="consent">
+                        <div>
+                            <input type="checkbox" id="cb1"><label for="cb1"></label>
+                        </div>
+                        <div class="consent_text">
+                            Wyrażam zgodę na przetwarzanie moich danych osobowych w rozumieniu ustawy z dnia 29 sierpnia 1997 roku o ochronie danych osobowych oraz ustawy z dnia 16 lipca 2004 roku Prawo telekomunikacyjne w celach marketingowych przez Collegium Da Vinci i oświadczam, iż podanie przeze mnie danych osobowych jest dobrowolne oraz iż zostałem poinformowany o prawie żądania dostępu do moich danych osobowych, ich zmiany oraz usunięcia.
+                        </div>
+                    </div>
+                    <button type="submit" class="bnt-form-submit">wyślij</button>
+                </form>
+            </div>
+        </section>
     </main>
-    <footer>
+    <footer class="footer-wrapper">
 
     </footer>
+    <a class="scrollup"></a>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="lib/fancybox/jquery.fancybox.min.js"></script>
     <script src="lib/slick/slick.min.js"></script>
