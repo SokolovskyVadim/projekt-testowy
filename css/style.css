@@ -679,7 +679,10 @@ a {
 .burger:hover {
     cursor:pointer;
 }
-
+.logo-mobile {
+    display: flex;
+    justify-content: center;
+}
 .nav-mobile {
     background-color:#fff;
     position:fixed;
@@ -711,9 +714,16 @@ a {
     -o-transform:translateX(0px);
     transform:translateX(0px);
 }
+.nav-mobile ul {
+    margin-top: 60px;
+}
 .nav-mobile ul li {
     font-size: 16px;
     margin: 15px 0;
+}
+.nav-mobile ul li a {
+    color: #000000;
+    font-size: 18px;
 }
 
 
@@ -803,7 +813,7 @@ a {
         padding: 30px 0 0 0;
     }
     .main-slider__arrows {
-        top: 90%;
+        top: 80%;
     }
     .footer-subrow__wrapper {
         flex-wrap: wrap;
@@ -835,6 +845,11 @@ a {
     }
     .main-block__list li {
         padding-bottom: 20px;
+    }
+}
+@media (max-width:320px) {
+    .main-slider__arrows {
+        top: 90%;
     }
 }
 
