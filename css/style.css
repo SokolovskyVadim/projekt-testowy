@@ -525,9 +525,57 @@ a {
 .scrollup:hover {
     opacity: 1;
 }
- /* скролл вверх-end */
-
-/* попапы */
+.footer {
+    display: flex;
+}
+.footer-wrapper {
+    background: #001927;
+    padding: 85px 0 64px 0;
+}
+.footer-adress {
+    font-size: 15px;
+    font-family: "Muli";
+    color: rgb(255, 255, 255);
+    line-height: 2;   
+}
+.map {
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 50%;
+    position: relative;
+    margin-top: 48px;
+}
+.map iframe {
+    position: absolute;
+    top: -55px;
+    left: -72px;
+}
+.footer-right {
+    padding-right: 100px;
+}
+.footer-subrow ul li {
+    margin-bottom: 30px;
+}
+.footer-subrow ul li a {
+    font-size: 15px;
+    font-family: "Muli";
+    color: rgb(255, 255, 255);    
+}
+.footer-subrow__wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+.footer-left {
+    width: 80%;
+}
+.who-made {
+    text-align: right;
+    font-size: 15px;
+    font-family: "Muli";
+    color: rgb(255, 255, 255);
+    margin-top: 105px;  
+}
 #myfond_gris {
     display: none;
     background-color: #000;
